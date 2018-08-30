@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Friends" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BPB-qc-6s6">
+                                <rect key="frame" x="132" y="91" width="110" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqh-J4-pvH">
+                                <rect key="frame" x="124.5" y="317" width="126" height="32"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Create Contact"/>
+                                <connections>
+                                    <action selector="contactsButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJe-Vz-l3B"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PNh-aO-HYm">
+                                <rect key="frame" x="65" y="439" width="245" height="129"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ax-LR-p9m">
+                                <rect key="frame" x="132" y="173" width="110" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BPB-qc-6s6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="0Se-lG-MRi"/>
+                            <constraint firstItem="3Ax-LR-p9m" firstAttribute="centerX" secondItem="Cqh-J4-pvH" secondAttribute="centerX" id="2pg-3M-xyE"/>
+                            <constraint firstItem="BPB-qc-6s6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="QyU-Ge-Wtp"/>
+                            <constraint firstItem="BPB-qc-6s6" firstAttribute="leading" secondItem="3Ax-LR-p9m" secondAttribute="leading" id="X27-qO-30I"/>
+                            <constraint firstItem="BPB-qc-6s6" firstAttribute="trailing" secondItem="3Ax-LR-p9m" secondAttribute="trailing" id="Yle-4g-Ncc"/>
+                            <constraint firstItem="3Ax-LR-p9m" firstAttribute="top" secondItem="BPB-qc-6s6" secondAttribute="bottom" constant="52" id="f1h-gR-jV1"/>
+                            <constraint firstItem="PNh-aO-HYm" firstAttribute="top" secondItem="Cqh-J4-pvH" secondAttribute="bottom" constant="90" id="l62-Wk-sfp"/>
+                            <constraint firstItem="PNh-aO-HYm" firstAttribute="centerX" secondItem="Cqh-J4-pvH" secondAttribute="centerX" id="lxg-1W-Jw4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PNh-aO-HYm" secondAttribute="bottom" constant="99" id="sVb-k1-2Cy"/>
+                            <constraint firstItem="BPB-qc-6s6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txr-jM-4Ag"/>
+                            <constraint firstItem="PNh-aO-HYm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="uak-vq-bfP"/>
+                            <constraint firstItem="Cqh-J4-pvH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wtx-3i-psJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="BPB-qc-6s6" id="4Wg-eO-8tc"/>
+                        <outlet property="numberTextField" destination="3Ax-LR-p9m" id="IIh-bH-JbF"/>
+                        <outlet property="textView" destination="PNh-aO-HYm" id="TMD-JU-tac"/>
+                        <outlet property="view" destination="3Ax-LR-p9m" id="qev-6f-Ge4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="252.32383808095955"/>
+        </scene>
+    </scenes>
+</document>
